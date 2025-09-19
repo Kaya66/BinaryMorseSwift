@@ -20,7 +20,6 @@ struct termScript {
             let response = readLine()
             print("Input your text to encode/decode: ")
             let rawData = readLine()
-            
             print(response as Any)
             print(rawData as Any)
         }
