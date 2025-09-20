@@ -7,15 +7,15 @@ class binMorseClass {
     func mainMenu(){
         print("Please select (E)ncode or (D)ecode: ")
         let response = readLine()
+        print("Input your text to encode/decode: ")
+        let rawData = readLine() ?? "Test"
+        
         if (response?.lowercased() == "e") {
-            
+            encode(rawData: rawData)
         } else if (response?.lowercased() == "d") {
             
         }
-        print("Input your text to encode/decode: ")
-        let rawData = readLine()
-        print(response as Any)
-        print(rawData as Any)
+        
     }
     
     
@@ -32,4 +32,18 @@ class binMorseClass {
         }
         return result
     }
+    
+    
+    func encode (rawData:String) -> String {
+        var retArray: [String] = ["0"]
+        
+        
+        return retArray[0]
+        
+    }
+    func decode () -> String {
+        var retArray: [String] = ["0"]
+        
+        
+        return retArray[0]    }
 }
