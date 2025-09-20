@@ -72,7 +72,7 @@ class logic {
     
     func decode (rawData: String) -> String {
         var retString: String = ""
-        var tempArray = rawData.components(separatedBy: " ")
+        let tempArray = rawData.components(separatedBy: " ")
             .filter { $0.count == 8 }
         
         for x in tempArray {
